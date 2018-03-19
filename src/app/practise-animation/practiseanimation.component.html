@@ -1,0 +1,17 @@
+<div>
+  <button type="submi" [@buttonAnimation]="state" (click)="buttonState()">Transition</button>
+</div>
+
+<div [@hovertext]="stateName">
+  <p>Hello! I'm a helpful message.</p>
+  <button (click)="hoverState()">Toggle PopOver</button>
+</div>
+
+
+<img src="../assets/images/teddy.jpg" alt="Smiley face" height="400px" width="400px">
+
+
+<button type="submit" class="positionChange" [@photoState] (click)="isImageTransition('translate')">Translate</button>
+<button type="submit" class="positionChange" [@photoState] (click)="isImageTransition('Rotate')">Rotate</button>
+<button type="submit" class="positionChange" [@photoState]>scale</button>
+<button type="submit" class="positionChange" [@photoState]>Reset</button>

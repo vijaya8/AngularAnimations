@@ -1,0 +1,11 @@
+img {
+    margin-right: 800px;
+}
+
+.positionChange{
+    margin-right: 200px;
+    width: 60px;
+    height: 30px;
+    background:rgb(204, 62, 14);
+    color:white
+}
