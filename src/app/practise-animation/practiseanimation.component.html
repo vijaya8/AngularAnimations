@@ -7,11 +7,13 @@
   <button (click)="hoverState()">Toggle PopOver</button>
 </div>
 
+<div class="more-design">
+  <img src="../assets/images/teddy.jpg" [@photoState]="imageState" alt="Smiley face" height="400px" width="400px">
+  <a routerLink="/another">More</a>
+</div>
 
-<img src="../assets/images/teddy.jpg" alt="Smiley face" height="400px" width="400px">
+<button type="submit" class="positionChange"  (click)="isImageTransition('move')">Translate</button>
+<button type="submit" class="positionChange"  (click)="isImageTransition('spin')">Rotate</button>
+<button type="submit" class="positionChange"  (click)="isImageTransition('enlarge')">scale</button>
+<button type="submit" class="positionChange"  (click)="isImageTransition('reset')">Reset</button>
 
-
-<button type="submit" class="positionChange" [@photoState] (click)="isImageTransition('translate')">Translate</button>
-<button type="submit" class="positionChange" [@photoState] (click)="isImageTransition('Rotate')">Rotate</button>
-<button type="submit" class="positionChange" [@photoState]>scale</button>
-<button type="submit" class="positionChange" [@photoState]>Reset</button>

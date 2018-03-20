@@ -33,6 +33,7 @@ import { buttonHoverAnimation, imageAnimation } from './practise-animations';
 export class PractiseanimationComponent implements OnInit {
   state: string = 'inactive';
   hoverText: string = 'inactive';
+  imageState: string;
   constructor() { }
 
   buttonState(){
@@ -50,6 +51,11 @@ export class PractiseanimationComponent implements OnInit {
     console.log('this.hoverText in 1st', this.hoverText);
      this.hoverText = this.hoverText === 'inactive' ? 'active': 'inactive';
      console.log('this.hoverText in 2nd', this.hoverText);
+  }
+
+  isImageTransition(imageAngle){
+    console.log('imageAngle',imageAngle);
+    this.imageState = imageAngle;
   }
 
   ngOnInit() {

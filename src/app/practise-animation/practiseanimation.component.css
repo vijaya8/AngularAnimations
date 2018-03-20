@@ -1,5 +1,5 @@
 img {
-    margin-right: 800px;
+    margin-left: 100px;
 }
 
 .positionChange{
@@ -8,4 +8,12 @@ img {
     height: 30px;
     background:rgb(204, 62, 14);
     color:white
+}
+.more-design {
+    display: flex;
+}
+.more-design a {
+    margin-top: 200px;
+    margin-left: 300px;
+    font-size: 50px;
 }

@@ -1,0 +1,9 @@
+<div [@anotherText]="textStatus" >  
+    <p class="anotherP">Can you see me? I should fade in or out...</p>
+</div>
+
+<div [@imgAnimation]="photos.length">
+    <div *ngFor="let photo of photos">
+        <img  [src]="photo" class="imageTran" >
+    </div>
+  </div>
